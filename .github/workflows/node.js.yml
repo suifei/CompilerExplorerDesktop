@@ -1,31 +1,25 @@
-name: Build and Release  
+name: Build and Release
 
 on: 
   push:
-    branches:  
-      - main  
+    branches: 
+      - main
   pull_request:
-    branches:  
-      - main   
+    branches: 
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:  
+    steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:  
-          path: src  
-      - name: Install dependencies  
-        run: |
-          cd src  
-          npm install  
+      - name: Install dependencies
+        run: npm install
       - name: Build app
-        run: |
-          cd src
-          npm run make  
+        run: npm run make
       - name: Create release
         uses: softprops/action-gh-release@v1
-        with:  
-          files: dist/*.AppImage,dist/*.deb,dist/*.rpm  
+        with:
+          files: dist/*.AppImage,dist/*.deb,dist/*.rpm
           draft: true
