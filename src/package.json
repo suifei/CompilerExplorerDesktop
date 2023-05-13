@@ -1,11 +1,19 @@
 {
-  "name": "fixed-sand-prove-80d3q",
-  "productName": "fixed-sand-prove-80d3q",
-  "description": "My Electron application description",
+  "name": "compilerexplorerdesktop",
+  "productName": "CompilerExplorerDesktop",
+  "description": "Compiler Explorer website local application",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",
   "author": "suifei",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suifei/CompilerExplorerDesktop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suifei/CompilerExplorerDesktop/issues"
+  },
+  "homepage": "https://github.com/suifei/CompilerExplorerDesktop#readme",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -46,5 +54,5 @@
       ]
     }
   },
-  "license": "MIT"
+  "license": "Apache"
 }
