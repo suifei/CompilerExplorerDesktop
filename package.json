@@ -26,7 +26,8 @@
   },
   "license": "Apache",
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "rpmbuild": "^0.0.23"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
