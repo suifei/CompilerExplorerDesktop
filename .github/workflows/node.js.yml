@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build app
-        run: npm run make
+        run: npm run make arch=x64 platform=darwin
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
