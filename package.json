@@ -1,9 +1,9 @@
 {
   "name": "app",
-  "version": "1.0.0",
   "productName": "CompilerExplorerDesktop",
+  "version": "1.0.0",
   "description": "Compiler Explorer website local application",
-  "main": ".webpack/main",
+  "main": "src/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suifei/CompilerExplorerDesktop.git"
@@ -25,20 +25,15 @@
     "email": "suifei@gmail.com"
   },
   "license": "Apache",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
     "@electron-forge/maker-deb": "^6.1.1",
     "@electron-forge/maker-rpm": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
-    "@electron-forge/plugin-webpack": "^6.1.1",
-    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
-    "css-loader": "^6.7.3",
-    "electron": "24.3.0",
-    "node-loader": "^2.0.0",
-    "style-loader": "^3.3.2"
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron": "24.3.0"
   }
 }

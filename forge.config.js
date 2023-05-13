@@ -19,21 +19,4 @@ module.exports = {
       config: {},
     },
   ],
-  plugins: [
-    {
-      name: '@electron-forge/plugin-webpack',
-      config: {
-        mainConfig: './webpack.main.config.js',
-        renderer: {
-          config: './webpack.renderer.config.js',
-          entryPoints: [
-            {
-              js: './src/main.js',
-              name: 'main_window',
-            },
-          ],
-        },
-      },
-    },
-  ],
 };
