@@ -1,4 +1,4 @@
-# 本地Compiler Explorer
+# Local Compiler Explorer
 
 这是一个将Compiler Explorer网站打包成本地应用的项目。
 
@@ -51,7 +51,7 @@ npm start
 ## 作者信息 
 
 作者:suifei   
-邮箱:suifei@email.com 
+邮箱:suifei at email.com 
 
 ## 致谢 
 
