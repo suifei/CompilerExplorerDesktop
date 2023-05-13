@@ -1,6 +1,6 @@
 # Compiler Explorer Desktop
 
-[README.md](English)
+[English](README.md)
 
 这是一个将Compiler Explorer网站打包成本地应用的项目。
 
