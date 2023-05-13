@@ -14,16 +14,6 @@ app.whenReady().then(() => {
     win = null
   })
 
-  // const view = new BrowserView({
-  //   webPreferences: {
-  //     nodeIntegration: false
-  //   }
-  // })
-
-  // win.setBrowserView(view)
-  // view.setBounds({ x: 0, y: 0, width: 300, height: 300 })
-  // view.webContents.loadURL('https://godbolt.org/')
-
   win.loadURL('https://godbolt.org/', {
     userAgent : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4.1 Safari/605.1.15"
   })
