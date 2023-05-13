@@ -1,5 +1,5 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {executableName: 'app'},
   rebuildConfig: {},
   makers: [
     {
