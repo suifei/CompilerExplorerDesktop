@@ -1,4 +1,4 @@
-# Local Compiler Explorer
+# Compiler Explorer Desktop
 
 This is a project that packages the Compiler Explorer website into a local application.
 
@@ -50,7 +50,7 @@ This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE
 ## Author information 
 
 Author: suifei   
-Email: suifei at email.com 
+Email: c3VpZmUgQGdtYWlsIGRvdGNvbQ==
 
 ## Acknowledgments 
 
