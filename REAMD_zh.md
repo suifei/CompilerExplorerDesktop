@@ -1,5 +1,7 @@
 # Compiler Explorer Desktop
 
+[README.md](English)
+
 这是一个将Compiler Explorer网站打包成本地应用的项目。
 
 Compiler Explorer是一个在线编译网站,支持多种语言和编译器,可以在浏览器中编写和编译代码。这个项目使用Electron将其打包成本地桌面应用,让用户离线使用。
