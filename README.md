@@ -1,5 +1,7 @@
 # Compiler Explorer Desktop
 
+[READMD_zh.md](中文版)
+
 This is a project that packages the Compiler Explorer website into a local application.
 
 Compiler Explorer is an online compilation website that supports multiple languages and compilers. It allows you to write and compile code in your browser. This project uses Electron to package it into a desktop application so that users can use it offline.
