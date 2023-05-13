@@ -1,6 +1,6 @@
 # Compiler Explorer Desktop
 
-[READMD_zh.md](中文版)
+[中文版](README_zh.md)
 
 This is a project that packages the Compiler Explorer website into a local application.
 
