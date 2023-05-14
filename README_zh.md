@@ -8,7 +8,7 @@ Compiler Explorer是一个在线编译网站,支持多种语言和编译器,可�
 
 该项目地址在github上:https://github.com/suifei/CompilerExplorerDesktop/ 
 
-采用Apache 2.0开源协议。
+[BSD 2-Clause开源协议](LICENSE)。
 
 ## 开发环境
 

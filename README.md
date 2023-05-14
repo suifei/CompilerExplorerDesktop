@@ -8,7 +8,7 @@ Compiler Explorer is an online compilation website that supports multiple langua
 
 The project address on github is: https://github.com/suifei/CompilerExplorerDesktop/ 
 
-Licensed under the Apache 2.0 License.
+[Licensed under the BSD 2-Clause License](LICENSE).
 
 ## Development environment
 
