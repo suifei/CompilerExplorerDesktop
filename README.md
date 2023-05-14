@@ -47,7 +47,7 @@ You can upload and edit code in the app, select a programming language and compi
 
 ## License
 
-This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the BSD 2-Clause License. See the [LICENSE](LICENSE) file for details.
 
 ## Author information 
 

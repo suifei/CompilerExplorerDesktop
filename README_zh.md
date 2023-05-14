@@ -48,7 +48,7 @@ npm start
 
 ## 许可证
 
-该项目采用Apache 2.0开源协议。详情请查看[LICENSE](LICENSE)文件。
+该项目采用BSD 2-Clause开源协议。详情请查看[LICENSE](LICENSE)文件。
 
 ## 作者信息 
 
