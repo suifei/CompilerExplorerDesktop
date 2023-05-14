@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install
-          sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot && sudo apt-get -y install rpm
+          sudo apt update && sudo apt -y install dpkg fakeroot && sudo apt-get -y install rpm
       - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
         run: yarn make --arch=${{ matrix.arch }} --platform=${{ matrix.platform }}
       - name: Create release
@@ -43,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install
-          sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm wine 
+          sudo apt update && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm wine 
           sudo dpkg --add-architecture i386 && sudo apt-get update && sudo apt-get -y install wine32
           sudo apt install ca-certificates gnupg
           sudo gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/mono-official-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
