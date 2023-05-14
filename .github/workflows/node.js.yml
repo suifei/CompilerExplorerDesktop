@@ -9,13 +9,51 @@ on:
       - main
 
 jobs:
-  build:
+  build-linux:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
         arch: [x64, arm64]
-        platform: [linux, win32, darwin]
+        platform: [linux]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
+      - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
+        run: yarn make arch=${{ matrix.arch }} platform=${{ matrix.platform }}
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./out/make/*
+          draft: true
+  build-win32:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest]
+        arch: [x64, arm64]
+        platform: [win32]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
+      - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
+        run: yarn make arch=${{ matrix.arch }} platform=${{ matrix.platform }}
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./out/make/*
+          draft: true
+  build-darwin:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest]
+        arch: [x64, arm64]
+        platform: [darwin]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
