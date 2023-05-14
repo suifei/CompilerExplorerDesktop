@@ -1,5 +1,6 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:macos",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
   "features": {
+    "ghcr.io/devcontainers-contrib/features/jshint:2": {}
   }
 }
