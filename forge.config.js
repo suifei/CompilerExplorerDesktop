@@ -12,7 +12,7 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        iconUrl: 'https://github.com/suifei/CompilerExplorerDesktop/assets/raw/main/favicon.ico',
+        iconUrl: 'https://github.com/suifei/CompilerExplorerDesktop/raw/main/assets/favicon.ico',
         setupIcon: './assets/favicon.ico',
         authors: 'suifei', 
         description: 'Compiler Explorer website local application',
