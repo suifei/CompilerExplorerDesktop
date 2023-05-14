@@ -6,6 +6,7 @@ module.exports = {
     platforms: ['darwin', 'linux', 'win32'],
     arch: ['x64', 'arm64'],
     asar: true,
+    executableName: 'ced'
   },
   rebuildConfig: {},
   makers: [
@@ -14,7 +15,7 @@ module.exports = {
       config: {
         iconUrl: 'https://github.com/suifei/CompilerExplorerDesktop/raw/main/assets/favicon.ico',
         setupIcon: './assets/favicon.ico',
-        authors: 'suifei', 
+        authors: 'suifei',
         description: 'Compiler Explorer website local application',
       },
     },
@@ -34,7 +35,7 @@ module.exports = {
       name: '@electron-forge/maker-deb',
       config: {
         options: {
-          bin: 'CED',
+          bin: 'ced',
           name: 'ced',
           productName: 'Compiler Explorer Desktop',
           description: 'Compiler Explorer website local application',
@@ -51,7 +52,7 @@ module.exports = {
       name: '@electron-forge/maker-rpm',
       config: {
         options: {
-          bin: 'CED',
+          bin: 'ced',
           name: 'ced',
           productName: 'Compiler Explorer Desktop',
           description: 'Compiler Explorer website local application',

@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "productName": "CompilerExplorerDesktop",
+  "name": "ced",
+  "productName": "Compiler Explorer Desktop",
   "version": "1.0.0",
   "description": "Compiler Explorer website local application",
   "main": "src/main.js",
@@ -24,14 +24,17 @@
     "name": "SuiFei",
     "email": "suifei@gmail.com"
   },
-  "license": "Apache",
+  "license": "bsd2-clause",
   "dependencies": {
+    "electron-context-menu": "^3.6.1",
     "electron-squirrel-startup": "^1.0.0",
+    "electron-store": "^8.1.0",
     "rpmbuild": "^0.0.23"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.1",
     "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-dmg": "^6.1.1",
     "@electron-forge/maker-rpm": "^6.1.1",
     "@electron-forge/maker-squirrel": "^6.1.1",
     "@electron-forge/maker-zip": "^6.1.1",
