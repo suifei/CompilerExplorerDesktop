@@ -23,14 +23,14 @@ module.exports = {
       name: '@electron-forge/maker-zip',
       platforms: ['darwin', 'win32'],
     },
-    {
-      name: '@electron-forge/maker-dmg',
-      config: {
-        icon: './assets/favicon.icns',
-        background: './assets/bg.png',
-        overwrite: true,
-      },
-    },
+    // {
+    //   name: '@electron-forge/maker-dmg',
+    //   config: {
+    //     icon: './assets/favicon.icns',
+    //     background: './assets/bg.png',
+    //     overwrite: true,
+    //   },
+    // },
     {
       name: '@electron-forge/maker-deb',
       config: {

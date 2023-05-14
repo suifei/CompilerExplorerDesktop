@@ -20,9 +20,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install dependencies
-        run: yarn install
+        run: |
+        yarn install
+        sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot && sudo apt-get -y install rpm
       - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
-        run: yarn make arch=${{ matrix.arch }} platform=${{ matrix.platform }}
+        run: yarn make --arch=${{ matrix.arch }} --platform=${{ matrix.platform }}
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
@@ -39,9 +41,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install dependencies
-        run: yarn install
+        run: |
+        yarn install
+        sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm
       - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
-        run: yarn make arch=${{ matrix.arch }} platform=${{ matrix.platform }}
+        run: yarn make --arch=${{ matrix.arch }} --platform=${{ matrix.platform }}
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
@@ -58,9 +62,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install dependencies
-        run: yarn install
+        run: |
+        yarn install
+        sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm
       - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
-        run: yarn make arch=${{ matrix.arch }} platform=${{ matrix.platform }}
+        run: yarn make --arch=${{ matrix.arch }} --platform=${{ matrix.platform }}
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
