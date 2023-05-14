@@ -21,8 +21,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-        yarn install
-        sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot && sudo apt-get -y install rpm
+          yarn install
+          sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot && sudo apt-get -y install rpm
       - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
         run: yarn make --arch=${{ matrix.arch }} --platform=${{ matrix.platform }}
       - name: Create release
@@ -35,15 +35,16 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        arch: [x64, arm64]
+        arch: [ia32, x64, arm64]
         platform: [win32]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-        yarn install
-        sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm
+          yarn install
+          sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm wine 
+          sudo dpkg --add-architecture i386 && sudo apt-get update && sudo apt-get -y install wine32
       - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
         run: yarn make --arch=${{ matrix.arch }} --platform=${{ matrix.platform }}
       - name: Create release
@@ -63,8 +64,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-        yarn install
-        sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm
+          yarn install
+          sudo apt update && sudo apt -y upgrade && sudo apt -y install dpkg fakeroot  && sudo apt-get -y install rpm
       - name: Build app ${{ matrix.platform }}_${{ matrix.arch }}
         run: yarn make --arch=${{ matrix.arch }} --platform=${{ matrix.platform }}
       - name: Create release
